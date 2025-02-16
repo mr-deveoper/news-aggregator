@@ -1,0 +1,121 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.article-card {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: none;
+  
+  // Mobile-only styles
+  margin: $spacing-sm 0; // Keep vertical spacing between cards
+  padding: 0; // Remove all padding on mobile
+  
+  @media (min-width: $breakpoint-sm) {
+    max-width: none;
+    border-radius: $card-border-radius;
+    box-shadow: $card-shadow;
+    margin: 0; // Remove spacing on desktop
+    @include card-hover;
+  }
+
+  &__media {
+    object-fit: cover;
+    height: 180px;
+
+    @include responsive(sm) {
+      height: 200px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    padding: 0; // Remove padding on mobile
+    
+    @media (min-width: $breakpoint-sm) {
+      gap: $spacing-md;
+      padding: $spacing-lg; // Add padding back on desktop
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.3;
+    min-height: 2.6em;
+    font-size: 0.9rem;
+
+    @include responsive(sm) {
+      font-size: 1rem;
+    }
+  }
+
+  &__description {
+    color: $text-secondary;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+    min-height: 4.2em;
+    font-size: 0.8rem;
+
+    @include responsive(sm) {
+      font-size: 0.85rem;
+    }
+  }
+
+  &__chips {
+    display: flex;
+    gap: $spacing-sm;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__chip {
+    height: 24px;
+    font-size: 0.75rem;
+    padding: 0 $spacing-sm;
+  }
+
+  &__date {
+    font-size: 0.75rem;
+    color: $text-secondary;
+  }
+
+  &__actions {
+    padding: 0; // Remove padding on mobile
+    padding-top: 0;
+
+    @media (min-width: $breakpoint-sm) {
+      padding: $spacing-sm $spacing-md; // Add padding back on desktop
+      padding-top: 0;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+    background-color: $primary-color;
+    color: $white;
+    font-size: 0.8rem;
+    min-height: 30px;
+    padding: $spacing-xs $spacing-md;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
+} 

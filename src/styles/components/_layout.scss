@@ -1,0 +1,114 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.layout {
+  &__container {
+    display: flex;
+    min-height: 100vh;
+    background-color: $background-color;
+    overflow: hidden;
+  }
+
+  &__appbar {
+    background-color: $primary-color;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.12);
+    z-index: 1201; // theme.zIndex.drawer + 1
+  }
+
+  &__menu-button {
+    margin-right: 16px;
+    @media (min-width: $breakpoint-sm) {
+      display: none;
+    }
+  }
+
+  &__title {
+    flex-grow: 1;
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+    margin-right: 48px; // To balance the filter button width
+  }
+
+  &__filter-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: $white;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__filter-icon {
+    color: $white !important;
+  }
+
+  &__filter-text {
+    color: $white !important;
+    @media (max-width: $breakpoint-sm) {
+      display: none;
+    }
+  }
+
+  &__main {
+    flex-grow: 1;
+    margin-top: 64px;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    
+    @media (min-width: $breakpoint-sm) {
+      padding: $spacing-lg;
+    }
+    
+    @media (min-width: $breakpoint-md) {
+      padding: $spacing-xl;
+    }
+  }
+
+  &__drawer {
+    width: 300px;
+    box-sizing: border-box;
+    padding: $spacing-xl;
+    margin-top: 64px;
+    border: none;
+    background-color: $white;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    height: calc(100% - 64px);
+  }
+
+  &__back-to-top {
+    position: fixed !important;
+    bottom: $spacing-lg;
+    right: $spacing-lg;
+    background-color: $primary-color !important;
+    color: $white !important;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out !important;
+    z-index: 1000;
+
+    &:hover {
+      background-color: $primary-dark !important;
+      transform: translateY(15px);
+    }
+
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      bottom: $spacing-md;
+      right: $spacing-md;
+      width: 40px !important;
+      height: 40px !important;
+      min-height: 40px !important;
+    }
+  }
+} 

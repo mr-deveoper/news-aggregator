@@ -1,0 +1,18 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.filters {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &__field {
+    width: 100%;
+  }
+
+  &__button {
+    margin-top: $spacing-md;
+  }
+} 

@@ -1,0 +1,121 @@
+{
+  "app": {
+    "title": "News Aggregator",
+    "filters": "Filters",
+    "language": "Change language"
+  },
+  "search": {
+    "placeholder": "Search for news...",
+    "loading": "Loading articles...",
+    "noResults": "No articles found. Try different search terms or filters.",
+    "error": "Failed to fetch articles. Please try again later.",
+    "searchButton": "Search",
+    "resetButton": "Reset search"
+  },
+  "article": {
+    "readMore": "Read More",
+    "publishedAt": "Published at",
+    "imageAlt": "Article image",
+    "source": "Source",
+    "category": "Category",
+    "categories": "Article categories",
+    "author": "Author",
+    "publishedBy": "Published by",
+    "readTime": "{{minutes}} min read",
+    "share": "Share article",
+    "bookmark": "Bookmark article"
+  },
+  "filters": {
+    "title": "Filter Articles",
+    "date": {
+      "label": "Date",
+      "placeholder": "Select date",
+      "today": "Today",
+      "thisWeek": "This Week",
+      "thisMonth": "This Month",
+      "thisYear": "This Year"
+    },
+    "source": {
+      "label": "Source",
+      "placeholder": "Select source",
+      "all": "All Sources",
+      "newsOrg": "News.org",
+      "newsAi": "News AI",
+      "guardian": "The Guardian"
+    },
+    "category": {
+      "label": "Category",
+      "placeholder": "Select category",
+      "all": "All Categories",
+      "business": "Business",
+      "technology": "Technology",
+      "sports": "Sports",
+      "science": "Science",
+      "health": "Health",
+      "entertainment": "Entertainment",
+      "politics": "Politics",
+      "world": "World"
+    },
+    "apply": "Apply Filters",
+    "clear": "Clear Filters",
+    "close": "Close filters",
+    "sortBy": {
+      "label": "Sort by",
+      "newest": "Newest first",
+      "oldest": "Oldest first",
+      "relevant": "Most relevant"
+    },
+    "timeRange": {
+      "label": "Time range",
+      "anyTime": "Any time",
+      "lastHour": "Last hour",
+      "last24h": "Last 24 hours",
+      "lastWeek": "Last week",
+      "lastMonth": "Last month"
+    },
+    "events": {
+      "select": "Select...",
+      "noOptions": "No options available",
+      "clearValue": "Clear value",
+      "clearAll": "Clear all"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalid": "Invalid selection"
+    }
+  },
+  "accessibility": {
+    "backToTop": "Back to top",
+    "openFilters": "Open filters",
+    "closeFilters": "Close filters",
+    "searchButton": "Search",
+    "clearSearch": "Clear search",
+    "resetSearch": "Reset search",
+    "articleCard": "Article card",
+    "mainContent": "Main content",
+    "navigation": "Main navigation",
+    "languageSelector": "Language selector"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "noData": "No data available"
+  },
+  "errors": {
+    "api": {
+      "rateLimit": "Too many requests. Please try again later.",
+      "network": "Network error. Please check your connection.",
+      "server": "Server error. Please try again later.",
+      "notFound": "Content not found."
+    }
+  },
+  "meta": {
+    "description": "Stay informed with the latest news from multiple sources",
+    "keywords": "news, articles, current events, headlines",
+    "share": {
+      "title": "Check out this article",
+      "description": "Interesting article from News Aggregator"
+    }
+  }
+} 

@@ -1,0 +1,67 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.article-list {
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    
+    @media (min-width: $breakpoint-sm) {
+      padding: $spacing-md;
+    }
+
+    // Override MUI Grid container margin
+    .MuiGrid-container {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 1200px;
+      justify-content: center;
+      align-items: center;
+      padding: {
+        left: $spacing-md;
+        right: $spacing-md;
+        top: $spacing-md;
+        bottom: $spacing-md;
+      }
+
+      @media (min-width: $breakpoint-sm) {
+        padding: {
+          left: $spacing-lg;
+          right: $spacing-lg;
+          top: 0;
+          bottom: 0;
+        }
+      }
+
+      @media (min-width: $breakpoint-md) {
+        padding: {
+          left: $spacing-xl;
+          right: $spacing-xl;
+        }
+      }
+    }
+  }
+
+  &__loading,
+  &__error,
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    gap: $spacing-md;
+  }
+
+  &__grid-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $spacing-md;
+
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: 0;
+    }
+  }
+} 

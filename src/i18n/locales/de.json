@@ -1,0 +1,121 @@
+{
+  "app": {
+    "title": "Nachrichtenaggregator",
+    "filters": "Filter",
+    "language": "Sprache ändern"
+  },
+  "search": {
+    "placeholder": "Nach Nachrichten suchen...",
+    "loading": "Artikel werden geladen...",
+    "noResults": "Keine Artikel gefunden. Versuchen Sie andere Suchbegriffe oder Filter.",
+    "error": "Fehler beim Laden der Artikel. Bitte versuchen Sie es später erneut.",
+    "searchButton": "Suchen",
+    "resetButton": "Suche zurücksetzen"
+  },
+  "article": {
+    "readMore": "Weiterlesen",
+    "publishedAt": "Veröffentlicht am",
+    "imageAlt": "Artikelbild",
+    "source": "Quelle",
+    "category": "Kategorie",
+    "categories": "Artikelkategorien",
+    "author": "Autor",
+    "publishedBy": "Veröffentlicht von",
+    "readTime": "{{minutes}} Min. Lesezeit",
+    "share": "Artikel teilen",
+    "bookmark": "Artikel speichern"
+  },
+  "filters": {
+    "title": "Artikel filtern",
+    "date": {
+      "label": "Datum",
+      "placeholder": "Datum auswählen",
+      "today": "Heute",
+      "thisWeek": "Diese Woche",
+      "thisMonth": "Dieser Monat",
+      "thisYear": "Dieses Jahr"
+    },
+    "source": {
+      "label": "Quelle",
+      "placeholder": "Quelle auswählen",
+      "all": "Alle Quellen",
+      "newsOrg": "News.org",
+      "newsAi": "News AI",
+      "guardian": "The Guardian"
+    },
+    "category": {
+      "label": "Kategorie",
+      "placeholder": "Kategorie auswählen",
+      "all": "Alle Kategorien",
+      "business": "Wirtschaft",
+      "technology": "Technologie",
+      "sports": "Sport",
+      "science": "Wissenschaft",
+      "health": "Gesundheit",
+      "entertainment": "Unterhaltung",
+      "politics": "Politik",
+      "world": "Welt"
+    },
+    "apply": "Filter anwenden",
+    "clear": "Filter zurücksetzen",
+    "close": "Filter schließen",
+    "sortBy": {
+      "label": "Sortieren nach",
+      "newest": "Neueste zuerst",
+      "oldest": "Älteste zuerst",
+      "relevant": "Relevanteste"
+    },
+    "timeRange": {
+      "label": "Zeitraum",
+      "anyTime": "Beliebig",
+      "lastHour": "Letzte Stunde",
+      "last24h": "Letzte 24 Stunden",
+      "lastWeek": "Letzte Woche",
+      "lastMonth": "Letzter Monat"
+    },
+    "events": {
+      "select": "Auswählen...",
+      "noOptions": "Keine Optionen verfügbar",
+      "clearValue": "Wert löschen",
+      "clearAll": "Alles löschen"
+    },
+    "validation": {
+      "required": "Dieses Feld ist erforderlich",
+      "invalid": "Ungültige Auswahl"
+    }
+  },
+  "accessibility": {
+    "backToTop": "Nach oben",
+    "openFilters": "Filter öffnen",
+    "closeFilters": "Filter schließen",
+    "searchButton": "Suchen",
+    "clearSearch": "Suche löschen",
+    "resetSearch": "Suche zurücksetzen",
+    "articleCard": "Artikelkarte",
+    "mainContent": "Hauptinhalt",
+    "navigation": "Hauptnavigation",
+    "languageSelector": "Sprachauswahl"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "retry": "Wiederholen",
+    "noData": "Keine Daten verfügbar"
+  },
+  "errors": {
+    "api": {
+      "rateLimit": "Zu viele Anfragen. Bitte versuchen Sie es später erneut.",
+      "network": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+      "server": "Serverfehler. Bitte versuchen Sie es später erneut.",
+      "notFound": "Inhalt nicht gefunden."
+    }
+  },
+  "meta": {
+    "description": "Bleiben Sie informiert mit den neuesten Nachrichten aus verschiedenen Quellen",
+    "keywords": "Nachrichten, Artikel, aktuelle Ereignisse, Schlagzeilen",
+    "share": {
+      "title": "Schauen Sie sich diesen Artikel an",
+      "description": "Interessanter Artikel vom Nachrichtenaggregator"
+    }
+  }
+} 
